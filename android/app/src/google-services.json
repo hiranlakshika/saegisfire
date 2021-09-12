@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "600637993183",
+    "project_id": "saegisfire",
+    "storage_bucket": "saegisfire.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600637993183:android:6f15349bea6528d4e4b96a",
+        "android_client_info": {
+          "package_name": "com.saegis.saegisfire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "600637993183-6fjha2jp9d3ujkch35o0qkiarrpp140s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBip6EAmIBQ2C5qk8M21CsQTZVzrVI8M6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "600637993183-6fjha2jp9d3ujkch35o0qkiarrpp140s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
