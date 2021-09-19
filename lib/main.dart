@@ -1,6 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:saegisfire/add_user.dart';
 import 'package:saegisfire/auth_controller.dart';
+import 'package:saegisfire/shared_pref_view.dart';
+import 'package:saegisfire/user_list.dart';
 
 import 'login.dart';
 
@@ -16,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: LoginScreen(),
+      home: MyHomePage(),
     );
   }
 }
@@ -46,6 +49,39 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               icon: Icon(Icons.logout))
         ],
+      ),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            ListTile(
+              title: Text('Shared Preferences'),
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SaveSharedPref(),
+                ),
+              ),
+            ),
+            ListTile(
+              title: Text('Add User'),
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => AddUser(),
+                ),
+              ),
+            ),
+            ListTile(
+              title: Text('Firestore Users'),
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => UsersList(),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
